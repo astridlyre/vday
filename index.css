@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&family=Oswald&display=swap');
+
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--accent-font: 'Oswald', sans-serif;
+	--main-font: 'Newsreader', serif;
+	--brand: #98819b;
+	--d-accent: #994780;
+	--dark: #222234;
+	--l-accent: #845e7d;
+	--light: #ede9e9;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	align-items: center;
+	background-color: var(--light);
+	color: var(--dark);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: start;
+	overflow-x: hidden;
+	width: 100vw;
+}
+
+h1 {
+	color: var(--brand);
+	font-family: var(--accent-font);
+	font-size: 5rem;
+	margin: 4rem 0 1rem 0;
+	position: relative;
+}
+
+h1:after {
+	background-color: var(--l-accent);
+	border-radius: 100%;
+	content: '';
+	height: 9rem;
+	left: -3rem;
+	opacity: 0.2;
+	position: absolute;
+	top: 1rem;
+	width: 9rem;
+	z-index: -1;
+}
+
+h2 {
+	color: var(--brand);
+	font-family: var(--accent-font);
+	font-size: 3rem;
+	margin: 1rem 0;
+	position: relative;
+}
+
+h2.right {
+	text-align: right;
+}
+
+h2.left {
+	text-align: left;
+}
+
+h2:after {
+	background-color: var(--l-accent);
+	border-radius: 100%;
+	content: '';
+	height: 7rem;
+	opacity: 0.2;
+	position: absolute;
+	top: 1rem;
+	width: 7rem;
+	z-index: -1;
+}
+
+h2.right:after {
+	right: -2rem;
+}
+
+h2.left:after {
+	left: -2rem;
+}
+
+p {
+	font-family: var(--main-font);
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin: 1rem 0;
+}
+
+img {
+	border-radius: 1.5rem;
+	margin: 1rem 0;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.container {
+	width: 75vw;
+}
+
+.bg-lines {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: none;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: -1;
+}
+
+.line {
+	border-left: 2px solid var(--brand);
+	opacity: 0.1;
+}
+
+.two-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 1rem 1rem;
+	width: 100%;
+}
+
+.final {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.heart {
+	widows: 100%;
+	position: relative;
+	z-index: -1;
+	fill: var(--l-accent);
+	opacity: 0.3;
+	stroke: var(--l-accent);
+	top: -18rem;
+}
