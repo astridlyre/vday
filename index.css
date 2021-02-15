@@ -126,9 +126,9 @@ img {
 
 .two-col {
 	display: grid;
+	gap: 1rem 1rem;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
-	gap: 1rem 1rem;
 	width: 100%;
 }
 
@@ -138,11 +138,11 @@ img {
 }
 
 .heart {
-	widows: 100%;
-	position: relative;
-	z-index: -1;
 	fill: var(--l-accent);
 	opacity: 0.3;
+	position: relative;
 	stroke: var(--l-accent);
 	top: -18rem;
+	widows: 100%;
+	z-index: -1;
 }
